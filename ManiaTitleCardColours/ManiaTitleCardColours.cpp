@@ -18,7 +18,7 @@ extern "C"
     void SetupTitleCardColours()
     {
         // TitleCard Pointer
-        auto addr = *(BYTE**)0x00E9C5CC;
+        auto addr = *(BYTE**)(baseAddress + 0x00AA7634);
         // Is in Encore Mode
         bool encore = *(addr + 0x37) == 5;
         // Address to the Background Colour within the Buffer 
@@ -68,7 +68,7 @@ extern "C"
     __declspec(dllexport) void Init(const char *path)
     {
         // Writes our hook into the function that handles what colours to use 
-        WriteJump((void*)0x011B5A00, SetupTitleCardColours);
+        WriteJump((void*)(baseAddress + 0x00015100), SetupTitleCardColours);
     }
 
     __declspec(dllexport) ModInfo ManiaModInfo = { ModLoaderVer, GameVer };
