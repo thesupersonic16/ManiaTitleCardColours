@@ -21,6 +21,15 @@
     <ClInclude Include="targetver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\mania-mod-loader\mod-loader-common\ModLoaderCommon\IniFile.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mania-mod-loader\mod-loader-common\ModLoaderCommon\TextConv.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mania-mod-loader\mod-loader-common\ModLoaderCommon\Utils.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -30,6 +39,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="dllmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mania-mod-loader\mod-loader-common\ModLoaderCommon\IniFile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mania-mod-loader\mod-loader-common\ModLoaderCommon\TextConv.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

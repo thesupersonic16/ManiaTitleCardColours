@@ -11,6 +11,8 @@
 // Windows Header Files
 #include <windows.h>
 
+// mod-loader-common should really be updated to use safer functions.
+
 
 
 // reference additional headers your program requires here
