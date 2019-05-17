@@ -39,6 +39,7 @@ extern "C"
                 WriteColour(addr, group->getInt("EncoreModeR"), group->getInt("EncoreModeG"), group->getInt("EncoreModeB"));
             else
                 WriteColour(addr, group->getInt("ManiaModeR"), group->getInt("ManiaModeG"), group->getInt("ManiaModeB"));
+            addr -= 4;
         }
         else
         {
@@ -50,7 +51,7 @@ extern "C"
         }
         
         // Jump back
-        addr -= 0x14;
+        addr -= 0x10;
         
         if (USECONFIGFILE)
         {
